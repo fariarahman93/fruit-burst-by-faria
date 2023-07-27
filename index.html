@@ -44,7 +44,7 @@
         <nav>
             <div
                 class="flex justify-between navbar bg-base-100 bg-[#F85559] text-lg font-medium text-[#FFF] rounded-[600px] px-8 py-2">
-                <div class="drop-shadow-lg">
+                <div class="md:drop-shadow-lg">
                     <ul class="flex gap-8">
                         <li>Home</li>
                         <li>About Us</li>
@@ -73,7 +73,7 @@
         <div class="carousel mt-12 bg-[#121212]">
             <!-- 1st slide -->
             <div id="slide1" class="carousel-item w-full relative">
-                <img src="/images/banner1.png" class="w-full" />
+                <img src="images/banner1.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
                     style="z-index: 10">
                     <a href="#slide4" class="btn btn-circle">❮</a>
@@ -91,7 +91,7 @@
 
             <!-- 2nd slide -->
             <div id="slide2" class="carousel-item w-full relative">
-                <img src="/images/banner2.png" class="w-full" />
+                <img src="images/banner2.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
                     style="z-index: 10">
                     <a href="#slide1" class="btn btn-circle">❮</a>
@@ -109,7 +109,7 @@
 
             <!-- 3rd slide -->
             <div id="slide3" class="carousel-item w-full relative">
-                <img src="/images/banner3.png" class="w-full" />
+                <img src="images/banner3.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
                     style="z-index: 10">
                     <a href="#slide2" class="btn btn-circle">❮</a>
@@ -127,7 +127,7 @@
 
             <!-- 4th slide -->
             <div id="slide4" class="carousel-item w-full relative">
-                <img src="/images/banner4.png" class="w-full" />
+                <img src="images/banner4.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
                     style="z-index: 10">
                     <a href="#slide3" class="btn btn-circle">❮</a>
@@ -158,7 +158,7 @@
     <main class="max-w-screen-lg mx-auto">
         <!-- deal of the day section -->
         <section>
-            <div class="flex justify-between gap-40 mt-20">
+            <div class="md:flex justify-between gap-40 mt-20">
                 <div class="pl-6">
                     <h3 class="text-3xl font-extrabold text-[#121212]">Deal of the day</h3>
                     <p class="text-lg text-[#12121299 font-medium]">Contrary to popular belief, is not simply random
@@ -200,7 +200,7 @@
             <!-- card 1 -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div class="card bg-base-100 shadow-xl text-center p-6">
-                    <figure><img style="width: 130px; height: 130px;" src="/images/fruit6.png" alt="fruit" /></figure>
+                    <figure><img style="width: 130px; height: 130px;" src="images/fruit6.png" alt="fruit" /></figure>
                     <div>
                         <h2 class="text-center font-bold text-2xl">12.90$ - 18.85$</h2>
                         <p class="text-[#12121299] font-medium text-lg">Apples</p>
@@ -218,7 +218,7 @@
                 </div>
                 <!-- card2 -->
                 <div class="card bg-base-100 shadow-xl text-center p-6">
-                    <figure><img style="width: 130px; height: 130px;" src="/images/fruit7.png" alt="fruit" /></figure>
+                    <figure><img style="width: 130px; height: 130px;" src="images/fruit7.png" alt="fruit" /></figure>
                     <div>
                         <h2 class="text-center font-bold text-2xl">12.90$ - 18.85$</h2>
                         <p class="text-[#12121299] font-medium text-lg">Orange</p>
@@ -236,7 +236,7 @@
                 </div>
                 <!-- card3 -->
                 <div class="card bg-base-100 shadow-xl text-center p-6">
-                    <figure><img style="width: 130px; height: 130px;" src="/images/fruit8.png" alt="fruit" /></figure>
+                    <figure><img style="width: 130px; height: 130px;" src="images/fruit8.png" alt="fruit" /></figure>
                     <div>
                         <h2 class="text-center font-bold text-2xl">12.90$ - 18.85$</h2>
                         <p class="text-[#12121299] font-medium text-lg">Red Dragon</p>
@@ -255,7 +255,7 @@
                 <!-- card4 -->
                 <div class="card bg-base-100 shadow-xl text-center p-6">
                     <figure>
-                        <img class="" style="width: 130px; height: 130px;" src="/images/fruit9.png" alt="fruit" />
+                        <img class="" style="width: 130px; height: 130px;" src="images/fruit9.png" alt="fruit" />
                     </figure>
 
                     <div>
@@ -332,19 +332,21 @@
     </div>
         <!-- Why Choose Us section -->
         <section>
-            <div class="pl-64 pb-12 pt-20 pb-5">
+            <div class="md:pl-64 pb-12 pt-20 pb-5">
                 <div>
                     <h2 class="text-[#121212] text-3xl font-bold pl-36">Why Choose Us</h2>
                 <p class="text-[#12121299] pr-64 text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 </div>
-        <div class="flex">
+        <div class="md:flex">
             <div>
                 <div>
                     <img src="icons/group 1.jpg" alt="">
-                    <h4 class="text-2xl font-bold">Dedicated Team</h4>
+                    <div>
+                        <h4 class="text-2xl font-bold">Dedicated Team</h4>
                     <hr>
                     <p class="text-[#12121299] font-medium text-sm">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    </div>
                 </div>
                 <div>
                     <img src="icons/love 1.jpg" alt="">
