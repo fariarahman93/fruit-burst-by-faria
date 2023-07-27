@@ -21,7 +21,22 @@
             }
         }
     </script>
+    <style>
+        .carousel-item {
+            position: relative;
+        }
 
+        .carousel-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+            z-index: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -55,82 +70,90 @@
             </div>
         </nav>
         <!-- banner -->
-        <div class="carousel  mt-12 bg-[#121212]">
+        <div class="carousel mt-12 bg-[#121212]">
             <!-- 1st slide -->
             <div id="slide1" class="carousel-item w-full relative">
                 <img src="/images/banner1.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                    style="z-index: 10">
                     <a href="#slide4" class="btn btn-circle">❮</a>
                     <a href="#slide2" class="btn btn-circle">❯</a>
                 </div>
-                <div class=" absolute bottom-5 left-0 right-0 text-center">
+                <div class="absolute bottom-32 left-0 right-0 text-center flex items-center justify-center">
                     <div>
-                        <h2 class="text-5xl font-extrabold text-[#FFFFFF] ">Exotic tastes at your doorstep</h2>
-                        <p class="font-medium  text-[#FFFFFF] text-xl mt-6 mb-8">We supply highly quality organic
-                            products</p>
-                        <button class="btn fruit-primary font-extrabold text-xl text-[#F85559] mb-18">Shop Now</button>
-                    </div>
-                </div>
-            </div>
-            <!-- 2nd slid -->
-            <div id="slide2" class="carousel-item w-full relative">
-                <img src="/images/banner2.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                </div>
-                <div class=" absolute bottom-5 left-0 right-0 text-center">
-                    <div>
-                        <h2 class="text-5xl font-extrabold text-[#FFFFFF] ">Exotic tastes at your doorstep</h2>
-                        <p class="font-medium  text-[#FFFFFF] text-xl mt-6 mb-8">We supply highly quality organic
-                            products</p>
-                        <button class="btn fruit-primary font-extrabold text-xl text-[#F85559] mb-18">Shop Now</button>
-                    </div>
-                </div>
-            </div>
-            <!-- 3rd slide -->
-            <div id="slide3" class="carousel-item w-full relative ">
-                <img src="/images/banner3.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                </div>
-                <div class=" absolute bottom-5 left-0 right-0 text-center">
-                    <div>
-                        <h2 class="text-5xl font-extrabold text-[#FFFFFF] ">Exotic tastes at your doorstep</h2>
-                        <p class="font-medium  text-[#FFFFFF] text-xl mt-6 mb-8">We supply highly quality organic
-                            products</p>
-                        <button class="btn fruit-primary font-extrabold text-xl text-[#F85559] mb-18">Shop Now</button>
-                    </div>
-                </div>
-            </div>
-            <!-- 4th slide -->
-            <div id="slide4" class="carousel-item w-full relative ">
-                <img src="/images/banner4.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-                <div class=" absolute bottom-5 left-0 right-0 text-center">
-                    <div>
-                        <h2 class="text-5xl font-extrabold text-[#FFFFFF] ">Exotic tastes at your doorstep</h2>
-                        <p class="font-medium  text-[#FFFFFF] text-xl mt-6 mb-8">We supply highly quality organic
+                        <h2 class="text-5xl font-extrabold text-[#FFFFFF]">Exotic tastes at your doorstep</h2>
+                        <p class="font-medium text-[#FFFFFF] text-xl mt-6 mb-8">We supply highly quality organic
                             products</p>
                         <button class="btn fruit-primary font-extrabold text-xl text-[#F85559] mb-18">Shop Now</button>
                     </div>
                 </div>
             </div>
 
+            <!-- 2nd slide -->
+            <div id="slide2" class="carousel-item w-full relative">
+                <img src="/images/banner2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                    style="z-index: 10">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+                <div class="absolute bottom-32 left-0 right-0 text-center flex items-center justify-center">
+                    <div>
+                        <h2 class="text-5xl font-extrabold text-[#FFFFFF]">Exotic tastes at your doorstep</h2>
+                        <p class="font-medium text-[#FFFFFF] text-xl mt-6 mb-8">We supply highly quality organic
+                            products</p>
+                        <button class="btn fruit-primary font-extrabold text-xl text-[#F85559] mb-18">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3rd slide -->
+            <div id="slide3" class="carousel-item w-full relative">
+                <img src="/images/banner3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                    style="z-index: 10">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+                <div class="absolute bottom-32 left-0 right-0 text-center flex items-center justify-center">
+                    <div>
+                        <h2 class="text-5xl font-extrabold text-[#FFFFFF]">Exotic tastes at your doorstep</h2>
+                        <p class="font-medium text-[#FFFFFF] text-xl mt-6 mb-8">We supply highly quality organic
+                            products</p>
+                        <button class="btn fruit-primary font-extrabold text-xl text-[#F85559] mb-18">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4th slide -->
+            <div id="slide4" class="carousel-item w-full relative">
+                <img src="/images/banner4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                    style="z-index: 10">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+                <div class="absolute bottom-32 left-0 right-0 text-center flex items-center justify-center">
+                    <div>
+                        <h2 class="text-5xl font-extrabold text-[#FFFFFF]">Exotic tastes at your doorstep</h2>
+                        <p class="font-medium text-[#FFFFFF] text-xl mt-6 mb-8">We supply highly quality organic
+                            products</p>
+                        <button class="btn fruit-primary font-extrabold text-xl text-[#F85559] mb-18">Shop Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <!-- bonus part -->
-        <div
-            class="flex justify-center gap-4 rounded-lg shadow w-4/5 mx-auto shadow-gray-400 p-10 border-0 border-pink-400 bg-[#FFF] relative -top-24">
+        <div class="flex justify-center gap-4 rounded-lg shadow w-4/5 mx-auto shadow-gray-400 p-10 border-0 border-pink-400 bg-[#FFF] relative -top-24"
+            style="z-index: 10">
             <img src="images/fruit1.png" alt="">
             <img src="images/fruit2.png" alt="">
             <img src="images/fruit3.png" alt="">
             <img src="images/fruit4.png" alt="">
             <img src="images/fruit5.png" alt="">
         </div>
+
     </header>
     <main class="max-w-screen-lg mx-auto">
         <!-- deal of the day section -->
@@ -252,16 +275,41 @@
         </section>
         <!-- meet the team -->
         <section>
-            <div class="bg-[url('images/team.png')]">
-                <div class="flex justify-center">
-<div>
-    <h3 class="text-4xl font-extrabold">Meet the team section</h3>
-    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-</div>
+            <div class="relative mt-12">
+                <div class="absolute inset-0 bg-opacity-60 bg-black"></div> <!-- Overlay with 60% opacity -->
+                <div class="absolute inset-0 ">
+                  <div>
+                    <h2 class="text-white text-3xl font-bold ">Meet the team section</h2>
+                  <p class="text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                   <div>
+                    <img src="images/member1.png" alt="">
+                    <h4>Awlad Hossain</h4>
+                    <p>Fruits Expert</p>
+                    <p>d:\facebook 1.svg </p>
+                   </div>
+                   <div>
+                    <img src="images/member2.png" alt="">
+                    <h4>Safia Chowdhury</h4>
+                    <p>Fruits Expert</p>
+                   </div>
+                   <div>
+                    <img src="images/member3.png" alt="">
+                    <h4>Rokib Hossain</h4>
+                    <p>Fruits Expert</p>
+                   </div>
+                   <div>
+                    <img src="images/member4.png" alt="">
+                    <h4>Chaity</h4>
+                    <p>Fruits Expert</p>
+                   </div>
+                  </div>
                 </div>
-                <div></div>
-                 
-              </div>
+                <img src="images/team.png" class="w-full h-full object-cover" alt="Background Image">
+                
+               </div>
+
         </section>
     </main>
     <footer></footer>
